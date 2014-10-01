@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
 
 body {
     background-color: #E2EAFF;
@@ -76,18 +76,25 @@ section {
     
 }
 article{
-    font-family: 'Josefin Sans', Arial, serif;
+    font-family: 'Archivo Narrow', Arial, serif;
     background-color: white;
     border-radius: 4px;
     box-shadow:-8px -4px 5px 0px rgba(48, 50, 50, 0.44);
     padding: 10px 5px 10px 5px;
     margin: 20px 0 20px 0; 
+    
 }
 article header{
-    
+    font-weight: 700;
     font-size: 20px;
 }
 footer{
-    
+    height: 20px;
+    width: 100%;
+    background-color: #7790CC;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway',Arial,serif;
     
 }
