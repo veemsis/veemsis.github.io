@@ -75,7 +75,11 @@ section {
     
     
 }
+
+
 article{
+    
+    display: block;
     font-family: 'Archivo Narrow', Arial, serif;
     background-color: white;
     border-radius: 4px;
