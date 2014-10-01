@@ -1,14 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
 body {
+    background-color: #E2EAFF;
+    margin: 0 0 0 0;
 }
 #banner{
     width: 100%;
-    border: 2px solid #2332FF;
     background-color:  #2332FF;
     height: 80px;
     border-radius: 2px;
     position:  relative;
+    
     
 }
 #banner img {
@@ -20,8 +23,71 @@ body {
     position:  absolute;
     display: inline-block;
     width: 75%;
-    font-size: 1.5em;
+    font-size: 26px;
     font-family: 'Raleway', sans-serif;
-    margin: 25px auto 25px 20px;
+    margin: 20px auto 20px 20px;
     color: white;
+}
+nav {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: #83A5E8;
+    
+    border-radius: 4px;
+}
+
+  nav ul {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+    nav ul  li {
+        display: inline-block;
+        margin: 0 5px 0 5px;
+        color: white;
+        padding: 0 2px 0 2px;
+        
+    }
+    nav ul li a:link, a:visited { 
+    color: white;
+    text-decoration: none;
+    
+}
+     nav ul li:hover{
+    
+    background-color: #4015E8;
+    border-color: #4015E8;
+    border-radius: 2px;
+    font-weight: 600;
+    
+    
+}
+
+
+section {
+    margin: 15px 5% 15px 5%;
+    width: 90%;
+    
+    
+}
+article{
+    font-family: 'Josefin Sans', Arial, serif;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow:-8px -4px 5px 0px rgba(48, 50, 50, 0.44);
+    padding: 10px 5px 10px 5px;
+    margin: 20px 0 20px 0; 
+}
+article header{
+    
+    font-size: 20px;
+}
+footer{
+    
+    
 }
