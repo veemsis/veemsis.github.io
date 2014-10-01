@@ -1,2 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 body {
+}
+#banner{
+    width: 100%;
+    border: 2px solid #2332FF;
+    background-color:  #2332FF;
+    height: 80px;
+    border-radius: 2px;
+    position:  relative;
+    
+}
+#banner img {
+    margin: 10px 10px 10px 10px;
+    width: auto;
+    height: 60px;
+}
+#banner h1 {
+    position:  absolute;
+    display: inline-block;
+    width: 75%;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    margin: 25px auto 25px 20px;
+    color: white;
 }
