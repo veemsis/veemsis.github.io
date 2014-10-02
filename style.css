@@ -94,6 +94,7 @@ article header{
 }
 footer{
     height: 20px;
+    padding: 5px 0 5px 0;
     width: 100%;
     background-color: #7790CC;
     font-size: 10px;
@@ -101,4 +102,7 @@ footer{
     color: white;
     font-family: 'Raleway',Arial,serif;
     
+}
+.num{
+    list-style-type: decimal;
 }
