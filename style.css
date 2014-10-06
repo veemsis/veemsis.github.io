@@ -1,9 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
-
+html{
+    height: 100%;
+}
 body {
     background-color: #E2EAFF;
     margin: 0 0 0 0;
+    min-height: 100%;
 }
 #banner{
     width: 100%;
@@ -93,6 +96,8 @@ article header{
     font-size: 20px;
 }
 footer{
+    
+    
     height: 20px;
     padding: 5px 0 5px 0;
     width: 100%;
@@ -105,4 +110,19 @@ footer{
 }
 .num{
     list-style-type: decimal;
+}
+article figure{
+    text-decoration: none;
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+article figure img{
+    width: 100%;
+    height: auto;
+}
+article figure figcaption{
+    background-color: #090C40;
+    color: white;
+    font-size: small;
+    font-family: Arial,serif;
 }
