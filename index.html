@@ -25,20 +25,53 @@
             </header>
             <form>
                 Wartosc min:<br>
-                <input type="text" id="min" name="min" value="Podaj dolna granice">
+                <input type="number" id="min" name="min" value="Podaj dolna granice"  required>
                           <br>
                 Wartosc max:<br>
-                <input type="text" name="max" id="max" value="Podaj gorna granice">
+                <input type="number" name="max" id="max" value="Podaj gorna granice" required>
                 <br><br>
-                <button type="button" id="bstart">Losuj!!!</button>
+                <button type="button" onclick="myFunction()" >Losuj!!!</button>
             </form>
               <div id="window">
-                
+
               </div>
               <span id="timestamp"></span>
           </div>
         </div>
+<script>
+function myFunction() {
+    var inpObjMin = document.getElementById("min");
+    var inpObjMax = document.getElementById("max");
+    var maxval = document.getElementById("max").value;
+    var minval = document.getElementById("min").value
+    var array= [1,2,3,8,9,10,12,13];
+    var number =Math.floor(Math.random()*8);
+console.log(maxval)
+    if (inpObjMin.checkValidity() == false || inpObjMax.checkValidity() == false) {
+        document.getElementById("timestamp").innerHTML = inpObjMin.validationMessage + inpObjMax.validationMessage;
+    }else{
+        switch(maxval){
+          case "25":
+          case "24":
+          case "23":
+          case "22":
+          case "21":
+          case "20":
+          document.getElementById("window").innerHTML = array[number];
+          console.log(maxval);
+          console.log("pierwszy case");
+          break;
 
+          default:
+          console.log("drugi case");
+          document.getElementById("window").innerHTML = Math.floor(Math.random()*(Number(maxval)-Number(minval)+1)+Number(minval));
+        }
+
+
+    }}
+
+
+</script>
 
 
 
@@ -49,7 +82,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src='script.js'></script>
+
 
     </body>
 </html>
