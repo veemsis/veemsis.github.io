@@ -1,5 +1,5 @@
 function Randx(){
-    var array= [1,3,6,9,12];
+    var array= [1,2,3,4,7,9];
 
 
 
