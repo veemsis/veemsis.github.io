@@ -44,8 +44,8 @@ function myFunction() {
     var inpObjMax = document.getElementById("max");
     var maxval = document.getElementById("max").value;
     var minval = document.getElementById("min").value
-    var array= [1,2,3,8,9,10,12,13];
-    var number =Math.floor(Math.random()*8);
+    var array= [1,2,3,4,7,9];
+    var number =Math.floor(Math.random()*6);
 console.log(maxval)
     if (inpObjMin.checkValidity() == false || inpObjMax.checkValidity() == false) {
         document.getElementById("timestamp").innerHTML = inpObjMin.validationMessage + inpObjMax.validationMessage;
