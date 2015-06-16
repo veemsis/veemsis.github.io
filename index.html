@@ -38,6 +38,111 @@
               <span id="timestamp"></span>
           </div>
         </div>
+        <xmp>
+            // PRZENOSZENIE NA GÓRE
+
+$( document ).ready(function() {
+    $("h1").click(function(){
+		$(this).prependTo("body");
+});
+});
+
+//DATA FORMATOWANIE
+$( document ).ready(function() {
+    $("input").keyup(function(){
+        var date = $(this).val();
+		var reg = /^(\d{2})[-\/](\d{2})[-\/](\d{4})$/.test(date);
+    if (reg){
+        $("div").text("Good Formatting!");
+    }else
+    {
+        $("div").text("BAD JOB");
+    }
+});
+});
+
+//ZMIANA KOLORU
+
+$( document ).ready(function() {
+    $("h1").click(function(){
+		$(this).css("color","red");
+		$("h2, h3").hide();
+});
+});
+
+
+//ASOCJACJA WERSJA OD MAGDY
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<div>
+{section name=people loop=$osoby}
+ <table border="1">
+ {if $smarty.section.people.first}                  
+	{foreach from=$osoby[people] key=key item=item1} 
+        <th>{$key}</th>
+    {/foreach}
+  <th>ilosc_liter</th> 
+ {/if}
+<tr>
+    <td  bgcolor="#EBE8E8">{$osoby[people].imie}</td>
+	<td  bgcolor="#808080">{$osoby[people].nazwisko}</td>
+	<td  bgcolor="#EBE8E8" >{math equation="x + y" x={$osoby[people].imie|count_characters} y={$osoby[people].nazwisko|count_characters}}</td>
+	
+</tr>
+</table>
+{/section}
+</div>
+</body>
+</html>
+
+//SMARTY OD SZYMONA
+<table>
+<tr class="first">
+                <td>lp</td>
+                <td>name</td>
+                <td>inhabitants</td>
+                <td>Ile</td>
+               
+                        </tr>
+{foreach $osoby as $x}
+<tr class="moje"</tr>
+<td>{counter}</td>
+<td>{$x.imie}</td>
+<td>{$x.nazwisko}</td>
+<td>{$x.imie|count_characters} + {$x.nazwisko|count_characters}</td>
+ 
+</tr>
+{/foreach}
+</table>
+ 
+.........................................................
+ 
+<table>
+<tr class="first">
+                <td>name</td>
+                <td>inhabitants</td>
+                <td>area</td>
+                        </tr>
+{foreach $content as $x}
+<tr class="{cycle values="odd,even"}">
+<td>{$x->name}</td>
+<td>{$x->inhabitants|string_format:"%.2f"}</td>
+<td>{$x->area}</td>
+</tr>
+{/foreach}
+</table>
+
+
+REGEXPY
+([aąeęioóuy])\w{5}\1 - moja wersja
+
+/b([a-z]{5})+/b
+        </xmp>
 <script>
 function myFunction() {
     var inpObjMin = document.getElementById("min");
